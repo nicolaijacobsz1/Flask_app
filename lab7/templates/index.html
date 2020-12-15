@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Page Title</title>
+   <!-- Custom styles for this template -->
+   <link href="{{ url_for('static', filename='webpage.css') }}" rel=stylesheet>
+
+</head>
+<body>
+    <!-- navigation-->
+    <div class="topnav">
+      <a class="active" href="{{url_for('main.index') }}">Home</a>
+      <a href="{{url_for('main.content') }}">content</a>
+      <a href="{{url_for('auth.login') }}">login</a>
+      <a href="{{url_for('auth.logout') }}">logout</a>
+      <a href="{{url_for('auth.signup') }}">signup</a>
+    </div>
+    <!--Current Time-->
+     
+        <!--Header Examples-->
+      <img src="{{ url_for('static', filename='image1.gif') }}" alt="gif">
+</body>
+</html> 

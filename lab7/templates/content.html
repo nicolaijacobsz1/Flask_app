@@ -1,0 +1,51 @@
+
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Content</title>
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='webpage.css') }}" rel=stylesheet>
+ </head>
+<body>
+    <!-- navigation-->
+    <div class="topnav">
+        <a chref="{{url_for('main.index') }}">Home</a>
+        <a class="active" href="{{url_for('main.content') }}">content</a>
+        <a href="{{url_for('auth.login') }}">login</a>
+        <a href="{{url_for('auth.logout') }}">logout</a>
+        <a href="{{url_for('auth.signup') }}">signup</a>
+      </div>
+      <table style="width:100%" >
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+          <th>email</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Smith</td>
+          <td>20</td>
+          <td>gmail.com</td>
+        </tr>
+        <tr>
+          <td>Jill</td>ss
+          <td>Jone</td>
+          <td>21</td>
+          <td>yahoo.com</td>
+        </tr>
+        <tr>
+          <td>Mike</td>
+          <td>Jackson</td>
+          <td>30</td>
+          <td>aol.com</td>
+        </tr>
+      </table>
+    </div>
+    <img src="{{ url_for('static', filename='image2.gif') }}" alt="gif">
+</body>
+</html> 
+{% endblock %}
+
